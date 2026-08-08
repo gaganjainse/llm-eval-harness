@@ -1,0 +1,17 @@
+name: rag-service-golden-set
+cases:
+  - id: rag-01
+    question: What does RAG stand for and why is it used?
+    golden_answer: RAG stands for retrieval-augmented generation; it grounds LLM answers in retrieved documents to reduce hallucination.
+    context: Retrieval-augmented generation (RAG) combines a retriever with a generator, grounding answers in external documents to reduce hallucination.
+    answer: RAG stands for retrieval-augmented generation, which grounds answers in retrieved documents to reduce hallucination.
+  - id: rag-02
+    question: How does the RAG service fuse hybrid retrieval results?
+    golden_answer: It merges dense vector scores and BM25-style keyword scores using Reciprocal Rank Fusion.
+    context: The service combines dense embeddings and keyword scoring, then merges the rankings with Reciprocal Rank Fusion (RRF).
+    answer: The RAG service merges dense vector and keyword scores with Reciprocal Rank Fusion (RRF).
+  - id: rag-03
+    question: What embedding backends does the service support?
+    golden_answer: sentence-transformers and a deterministic hashing embedder for offline use.
+    context: Embedding backends include sentence-transformers for production and a dependency-free hashing embedder for local and test environments.
+    answer: It supports sentence-transformers and a deterministic hashing embedder for offline use.
