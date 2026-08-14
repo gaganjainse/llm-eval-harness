@@ -63,4 +63,4 @@ end-to-end retrieval + generation quality.
 
 ## License
 
-MIT
+GPL-3.0-or-later
